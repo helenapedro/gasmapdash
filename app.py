@@ -23,7 +23,7 @@ sidebar = dbc.Nav(
 
 app.layout = dbc.Container([
     dbc.Row([
-        dbc.Col(html.Div("Python Multipage App with Dash",
+        dbc.Col(html.Div("Gas Station Data Map",
                          style={'fontSize':50, 'textAlign':'center'}))
     ]),
 
