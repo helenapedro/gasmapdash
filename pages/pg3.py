@@ -18,7 +18,6 @@ def fetch_data():
     return df
 
 layout = html.Div([
-    html.H1("Gas Station Data (Map)"),
     dcc.Graph(id='gas-stations-map'),  # Add a Graph component for the map
     dcc.Interval(
         id='interval-component',
