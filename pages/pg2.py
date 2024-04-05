@@ -27,15 +27,14 @@ layout = html.Div([
             {'field': 'Operator', 'filter': True},
             {'field': 'Station'},
             {'field': 'Address'},
-            {'field': 'Municipality', 'filter': True},
-            {'field': 'Province', 'filter': True},
-            {'field': 'Country'},
             {
-                'headerName': 'Municipality', 
-                "cellClass": 'center-aligned-cell',
+                'headerName': 'Details',
                 'children': [
-                                {'field': "Latitude"},
-                                {'field': "Longitude"},
+                                {"field": "Municipality", 'filter': True},
+                                {'field': "Latitude", "columnGroupShow": "open"},
+                                {'field': "Longitude", "columnGroupShow": "open"},
+                                {'field': "Province", 'filter': True, "columnGroupShow": "open"},
+                                {'field': "Country", "columnGroupShow": "open"},
                             ]
             },
         ],
