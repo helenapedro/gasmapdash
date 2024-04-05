@@ -24,8 +24,23 @@ layout = html.Div([
     dag.AgGrid(
         id='ag-grid',
         columnDefs=[
-            {'field': i, 'filter': True} for i in categories
-        ]
+            {'field': 'Operator', 'filter': True},
+            {'field': 'Station'},
+            {'field': 'Address'},
+            {'field': 'Municipality', 'filter': True},
+            {'field': 'Province', 'filter': True},
+            {'field': 'Country'},
+            {
+                'headerName': 'Municipality', 
+                "cellClass": 'center-aligned-cell',
+                'children': [
+                                {'field': "Latitude"},
+                                {'field': "Longitude"},
+                            ]
+            },
+        ],
+        defaultColDef = {"headerClass": 'center-aligned-header'},
+        columnSize="sizeToFit",
     )
 ])
 
