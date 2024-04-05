@@ -1,15 +1,13 @@
-import pandas as pd
-import requests
 import dash
 from dash import dcc, html, callback, Input, Output
 import plotly.express as px
+import requests
+import pandas as pd
 
 dash.register_page(__name__,
                    path='/mapdata',
-                   name='Map Data',
-                   title='Map',
-                   image='pg3.png',
-                   description='Learn all about the heatmap.'
+                   name='Map',
+                   title='MapData'
 )
 
 def fetch_data():
@@ -19,8 +17,6 @@ def fetch_data():
     df = pd.DataFrame(data)
     return df
 
-
-# Layout of the Dash app
 layout = html.Div([
     html.H1("Gas Station Data (Map)"),
     dcc.Graph(id='gas-stations-map'),  # Add a Graph component for the map
@@ -47,3 +43,4 @@ def update_map(n_intervals):
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     
     return fig
+
