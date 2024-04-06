@@ -1,5 +1,5 @@
 import dash
-from dash import html, callback, Output, Input
+from dash import html, dcc, callback, Output, Input
 import dash_ag_grid as dag
 import pandas as pd
 import requests
@@ -18,9 +18,19 @@ def fetch_data():
     df = pd.DataFrame(data)
     return df
 
+# Function to get unique municipalities from the data
+def get_unique_municipalities():
+    df = fetch_data()
+    return df['Municipality'].unique()
+
 categories = ['Station', 'Address', 'Municipality', 'Latitude', 'Longitude', 'Province']
 # Layout of the Dash app
 layout = html.Div([
+    dcc.Dropdown(
+        id='municipality-dropdown',
+        options=[{'label': municipality, 'value': municipality} for municipality in get_unique_municipalities()],
+        placeholder="Select a Municipality"
+    ),
     dag.AgGrid(
         id='ag-grid',
         columnDefs=[
@@ -34,7 +44,9 @@ layout = html.Div([
                                 {'field': "Latitude"},
                                 {'field': "Longitude"},
                                 {'field': "Province", 'filter': True},
-                            ]
+                                {'field': "Country"},
+                            ],
+                'headerClass': 'center-aligned-header'
             },
         ],
         defaultColDef = {"headerClass": 'center-aligned-header'},
@@ -43,11 +55,13 @@ layout = html.Div([
     )
 ])
 
-# Callback to update the data in the table
+# Callback to update the data in the table based on selected municipality
 @callback(
     Output('ag-grid', 'rowData'),
-    Input('ag-grid', 'page_size')
+    Input('municipality-dropdown', 'value')
 )
-def update_table(page_size):
+def update_table(selected_municipality):
     df = fetch_data()
+    if selected_municipality is not None:
+        df = df[df['Municipality'] == selected_municipality]
     return df.to_dict("records")
