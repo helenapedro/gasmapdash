@@ -7,7 +7,7 @@ server = app.server
 
 navbar = dbc.NavbarSimple(
     brand="GasPump Data Map",
-    brand_href="#",
+    brand_href="/",
     color="#802917",
     dark=True,
     children=[
