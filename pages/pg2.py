@@ -18,7 +18,7 @@ def fetch_data():
     df = pd.DataFrame(data)
     return df
 
-categories = ['Station', 'Address', 'Municipality', 'Latitude', 'Longitude', 'Province', 'Country']
+categories = ['Station', 'Address', 'Municipality', 'Latitude', 'Longitude', 'Province']
 # Layout of the Dash app
 layout = html.Div([
     dag.AgGrid(
@@ -28,13 +28,12 @@ layout = html.Div([
             {'field': 'Station'},
             {'field': 'Address'},
             {
-                'headerName': 'Details',
+                'headerName': 'Municipality Details',
                 'children': [
                                 {"field": "Municipality", 'filter': True},
                                 {'field': "Latitude"},
                                 {'field': "Longitude"},
                                 {'field': "Province", 'filter': True},
-                                {'field': "Country"},
                             ]
             },
         ],
