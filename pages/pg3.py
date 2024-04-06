@@ -20,10 +20,14 @@ def fetch_data():
 layout = html.Div([
     dcc.Dropdown(
         id='address-dropdown',
-        options=[{'label': address, 'value': address} for address in fetch_data()['Address']],
+        options=[{
+            'label': address, 
+            'value': address} for address in fetch_data()['Address']
+        ],
         placeholder="Select an Address"
     ),
-    dcc.Graph(id='gas-stations-map'),  # Add a Graph component for the map
+    dcc.Graph(id='gas-stations-map'), 
+
     dcc.Interval(
         id='interval-component',
         interval=10*1000,  # in milliseconds

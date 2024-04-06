@@ -23,7 +23,6 @@ def get_unique_municipalities():
     df = fetch_data()
     return df['Municipality'].unique()
 
-categories = ['Station', 'Address', 'Municipality', 'Latitude', 'Longitude', 'Province']
 # Layout of the Dash app
 layout = html.Div([
     dcc.Dropdown(
@@ -34,7 +33,7 @@ layout = html.Div([
     dag.AgGrid(
         id='ag-grid',
         columnDefs=[
-            {'field': 'Operator', 'filter': True, "pinned": True, "resizable": False},
+            {'field': 'Operator', 'filter': True, "resizable": False},
             {
                 'headerName': 'Operator Details',
                 'children': [
