@@ -18,6 +18,11 @@ def fetch_data():
     return df
 
 layout = html.Div([
+    dcc.Dropdown(
+        id='address-dropdown',
+        options=[{'label': address, 'value': address} for address in fetch_data()['Address']],
+        placeholder="Select an Address"
+    ),
     dcc.Graph(id='gas-stations-map'),  # Add a Graph component for the map
     dcc.Interval(
         id='interval-component',
@@ -28,18 +33,35 @@ layout = html.Div([
 
 @callback(
     Output('gas-stations-map', 'figure'),  # Update the figure of the map
-    [Input('interval-component', 'n_intervals')]
+    [Input('interval-component', 'n_intervals'),
+     Input('address-dropdown', 'value')]
 )
-def update_map(n_intervals):
+def update_map(n_intervals, selected_address):
     df = fetch_data()
-    
-    fig = px.scatter_mapbox(df, lat='Latitude', lon='Longitude',
-                            hover_name='Municipality',
-                            hover_data=['Station', 'Address'],
-                            zoom=5, height=600)
-    
-    fig.update_layout(mapbox_style="open-street-map")
-    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-    
-    return fig
+    if selected_address:
+        selected_row = df[df['Address'] == selected_address]
+        
+        # Extract latitude and longitude of selected address
+        selected_lat = selected_row['Latitude'].iloc[0]
+        selected_lon = selected_row['Longitude'].iloc[0]
+        
+        # Update map to center on the selected address
+        fig = px.scatter_mapbox(df, lat='Latitude', lon='Longitude',
+                                hover_name='Municipality',
+                                hover_data=['Station', 'Address'],
+                                zoom=8, height=600)
+        fig.update_layout(mapbox_style="open-street-map")
+        fig.update_layout(mapbox_center={"lat": selected_lat, "lon": selected_lon})
+        fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+        
+        return fig
+    else:
+        fig = px.scatter_mapbox(df, lat='Latitude', lon='Longitude',
+                                hover_name='Municipality',
+                                hover_data=['Station', 'Address'],
+                                zoom=5, height=600)
+        fig.update_layout(mapbox_style="open-street-map")
+        fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+        
+        return fig
 

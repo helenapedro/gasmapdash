@@ -34,9 +34,14 @@ layout = html.Div([
     dag.AgGrid(
         id='ag-grid',
         columnDefs=[
-            {'field': 'Operator', 'filter': True, "resizable": False},
-            {'field': 'Station'},
-            {'field': 'Address'},
+            {'field': 'Operator', 'filter': True, "pinned": True, "resizable": False},
+            {
+                'headerName': 'Operator Details',
+                'children': [
+                    {'field': 'Station'},
+                    {'field': 'Address'},
+                ]
+            },
             {
                 'headerName': 'Municipality Details',
                 'children': [
