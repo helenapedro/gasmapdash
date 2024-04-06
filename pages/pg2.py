@@ -24,7 +24,7 @@ layout = html.Div([
     dag.AgGrid(
         id='ag-grid',
         columnDefs=[
-            {'field': 'Operator', 'filter': True},
+            {'field': 'Operator', 'filter': True, "resizable": False},
             {'field': 'Station'},
             {'field': 'Address'},
             {
@@ -39,7 +39,7 @@ layout = html.Div([
             },
         ],
         defaultColDef = {"headerClass": 'center-aligned-header'},
-        columnSize="sizeToFit",
+        columnSize="autoSize",
     )
 ])
 
