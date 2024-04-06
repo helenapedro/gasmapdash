@@ -7,7 +7,7 @@ import requests
 dash.register_page(__name__,
                    path='/',  # represents the url text
                    name='Table',  # name of page, commonly used as name of link
-                   title='Gas Stations Table'  # represents the title of browser's tab
+                   title='Home'  # represents the title of browser's tab
 )
 
 # Function to fetch data from the API
@@ -31,15 +31,16 @@ layout = html.Div([
                 'headerName': 'Details',
                 'children': [
                                 {"field": "Municipality", 'filter': True},
-                                {'field': "Latitude", "columnGroupShow": "open"},
-                                {'field': "Longitude", "columnGroupShow": "open"},
-                                {'field': "Province", 'filter': True, "columnGroupShow": "open"},
-                                {'field': "Country", "columnGroupShow": "open"},
+                                {'field': "Latitude"},
+                                {'field': "Longitude"},
+                                {'field': "Province", 'filter': True},
+                                {'field': "Country"},
                             ]
             },
         ],
         defaultColDef = {"headerClass": 'center-aligned-header'},
         columnSize="autoSize",
+        dashGridOptions={"pagination": True, "animateRows": False},
     )
 ])
 
