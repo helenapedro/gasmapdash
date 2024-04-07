@@ -9,7 +9,6 @@ dash.register_page(__name__,
                    name='Statistics',
                    title='Stats'
 )
-
 # Function to fetch data from the API with error handling
 def fetch_data():
     try:
