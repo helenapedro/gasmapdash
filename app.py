@@ -11,8 +11,8 @@ navbar = dbc.NavbarSimple(
     color="#802917",
     dark=True,
     children=[
-        dbc.NavItem(dbc.NavLink("Table", href="/")),
-        dbc.NavItem(dbc.NavLink("Map", href="/tabledata")),
+        dbc.NavItem(dbc.NavLink("Map", href="/")),
+        dbc.NavItem(dbc.NavLink("Table", href="/tabledata")),
         dbc.NavItem(dbc.NavLink("Stats", href="/stats")),
     ],
 )
