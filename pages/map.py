@@ -5,9 +5,9 @@ import requests
 import pandas as pd
 
 dash.register_page(__name__,
-                   path='/mapdata',
+                   path='/',
                    name='Map',
-                   title='MapData'
+                   title='Home'
 )
 
 def fetch_data():
@@ -53,7 +53,7 @@ def update_map(n_intervals, selected_address):
         fig = px.scatter_mapbox(df, lat='Latitude', lon='Longitude',
                                 hover_name='Municipality',
                                 hover_data=['Station', 'Address'],
-                                zoom=8, height=600)
+                                zoom=10, height=600)
         fig.update_layout(mapbox_style="open-street-map")
         fig.update_layout(mapbox_center={"lat": selected_lat, "lon": selected_lon})
         fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})

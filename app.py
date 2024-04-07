@@ -12,7 +12,7 @@ navbar = dbc.NavbarSimple(
     dark=True,
     children=[
         dbc.NavItem(dbc.NavLink("Table", href="/")),
-        dbc.NavItem(dbc.NavLink("Map", href="/mapdata")),
+        dbc.NavItem(dbc.NavLink("Map", href="/tabledata")),
         dbc.NavItem(dbc.NavLink("Stats", href="/stats")),
     ],
 )

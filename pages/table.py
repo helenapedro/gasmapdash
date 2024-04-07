@@ -5,10 +5,10 @@ import pandas as pd
 import requests
 
 dash.register_page(__name__,
-                   path='/',  # represents the url text
-                   name='Table',  # name of page, commonly used as name of link
-                   title='Home'  # represents the title of browser's tab
-)
+                   path='/tabledata',  # represents the url text
+                   name='Table Data',  # name of page, commonly used as name of link
+                   title='Table'  # represents the title of browser's tab
+) 
 
 # Function to fetch data from the API
 def fetch_data():
