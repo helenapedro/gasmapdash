@@ -54,7 +54,7 @@ layout = html.Div([
             {'field': "Country"},
         ],
         defaultColDef = {"filter": True, "resizable": True, "suppressMovable": True},
-        columnSize="sizeToFit",
+        columnSize="autoSize",
         dashGridOptions={"pagination": True, "rowSelection": "multiple", "animateRows": False},
         csvExportParams={
             "fileName": "gaspump_data.csv",
