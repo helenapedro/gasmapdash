@@ -6,7 +6,7 @@ app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.SPACE
 server = app.server
 
 navbar = dbc.NavbarSimple(
-    brand="GasPump",
+    brand="GasPump Dashboard",
     brand_href="/",
     color="#802917",
     dark=True,
