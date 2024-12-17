@@ -1,46 +1,46 @@
 import dash
 from dash import html
 import dash_bootstrap_components as dbc
+import os
 
 app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.SPACELAB])
 server = app.server
 
-navbar = dbc.NavbarSimple(
-    brand="GasPump Dashboard",
-    brand_href="/",
+navbar = dbc.Navbar(
+    dbc.Container([
+        dbc.NavbarBrand("GasPump Dashboard", href="/"),
+        dbc.Nav(
+            [
+                dbc.NavLink("Map", href="/", active="exact"),
+                dbc.NavLink("Table", href="/tabledata", active="exact"),
+                dbc.NavLink("Stats", href="/stats", active="exact"),
+            ],
+            navbar=True,
+        ),
+    ]),
     color="#802917",
     dark=True,
-    children=[
-        dbc.NavItem(dbc.NavLink("Map", href="/")),
-        dbc.NavItem(dbc.NavLink("Table", href="/tabledata")),
-        dbc.NavItem(dbc.NavLink("Stats", href="/stats")),
-    ],
+)
+
+footer = html.Footer(
+    dbc.Container([
+        html.Div([
+            html.A("Helena Pedro", href="https://helenapedro.github.io/", target="_blank", style={"margin-right": "10px"}),
+            html.Span("© 2024 | All rights reserved.")
+        ], className="text-center"),
+    ], fluid=True, className="py-3"),
+    style={"background-color": "#802917", "color": "white"}
 )
 
 app.layout = dbc.Container([
     navbar,
-
     html.Hr(),
-
     dbc.Row(
-        [
-            dbc.Col(
-                [
-                    dash.page_container
-                ], xs=12, sm=12, md=12, lg=12, xl=12, xxl=12)
-        ]
+        dbc.Col(dash.page_container, width={"size": 10, "offset": 1})
     ),
-
     html.Hr(),
-
-    # Footer
-    html.Footer([
-        html.Div(html.A("Helena Pedro", href="https://helenapedro.github.io/", target="_blank")),
-        html.Div("© 2024")
-    ])
+    footer
 ], fluid=True)
 
-
-
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=os.getenv("DEBUG", "False").lower() == "true")
