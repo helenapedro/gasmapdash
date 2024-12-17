@@ -38,7 +38,6 @@ app.layout = dbc.Container([
         html.Div(html.A("Helena Pedro", href="https://helenapedro.github.io/", target="_blank")),
         html.Div("© 2024")
     ])
-
 ], fluid=True)
 
 

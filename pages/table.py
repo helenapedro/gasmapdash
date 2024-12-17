@@ -1,14 +1,14 @@
 import dash
 from dash import html, dcc, callback, State, Output, Input
-import dash_ag_grid as dag
+import dash_table
 import pandas as pd
 import requests
 
 dash.register_page(__name__,
-                   path='/tabledata',  # represents the url text
-                   name='Table Data',  # name of page, commonly used as name of link
-                   title='Table'  # represents the title of browser's tab
-) 
+                   path='/tabledata',  # represents the URL text
+                   name='Table Data',  # name of the page, commonly used as the name of the link
+                   title='Table'  # represents the title of the browser's tab
+)
 
 # Function to fetch data from the API with error handling
 def fetch_data():
@@ -37,46 +37,43 @@ layout = html.Div([
     ),
     html.Span("Copy selected "),
     dcc.Clipboard(id="clipboard", style={"display": "inline-block"}),
-    dag.AgGrid(
-        id='ag-grid',
-        columnDefs=[
-            {
-                'field': 'Operator', 
-                "checkboxSelection": True, 
-                "headerCheckboxSelection": True
-            },
-            {'field': 'Station'},
-            {'field': 'Address'},
-            {"field": "Municipality"},
-            {'field': "Latitude"},
-            {'field': "Longitude"},
-            {'field': "Province"},
-            {'field': "Country"},
+    dash_table.DataTable(
+        id='table',
+        columns=[
+            {"name": "Operator", "id": "Operator", "deletable": True},
+            {"name": "Station", "id": "Station", "deletable": True},
+            {"name": "Address", "id": "Address", "deletable": True},
+            {"name": "Municipality", "id": "Municipality", "deletable": True},
+            {"name": "Latitude", "id": "Latitude", "deletable": True},
+            {"name": "Longitude", "id": "Longitude", "deletable": True},
+            {"name": "Province", "id": "Province", "deletable": True},
+            {"name": "Country", "id": "Country", "deletable": True},
         ],
-        defaultColDef = {"filter": True, "resizable": True, "suppressMovable": True},
-        columnSize="autoSize",
-        dashGridOptions={"pagination": True, "rowSelection": "multiple", "animateRows": False},
-        csvExportParams={
-            "fileName": "gaspump_data.csv",
-        },
+        style_table={'height': '500px', 'overflowY': 'auto'},
+        style_cell={'padding': '10px', 'textAlign': 'center'},
+        style_header={'backgroundColor': 'rgb(230, 230, 230)', 'fontWeight': 'bold'},
+        row_selectable='multi',  # Allow multiple row selection
+        selected_rows=[],  # Initially no rows are selected
+        page_action='native',  # Enable pagination
+        page_size=25,  # Show 10 rows per page
+        export_format="csv",  # Allow CSV export
     ),
-    html.Button("Download CSV", id="csv-button", n_clicks=0),
 ])
 
 # Callback to update the data in the table based on selected municipality
 @callback(
-    Output('ag-grid', 'rowData'),
+    Output('table', 'data'),
     Input('municipality-dropdown', 'value')
 )
 def update_table(selected_municipality):
     df = fetch_data()
     if selected_municipality:
         df = df[df['Municipality'] == selected_municipality]
-    return df.to_dict("records")
+    return df.to_dict('records')
 
 # Callback to trigger CSV export
 @callback(
-    Output("ag-grid", "exportDataAsCsv"),
+    Output("table", "exportDataAsCsv"),
     Input("csv-button", "n_clicks"),
 )
 def export_data_as_csv(n_clicks):
@@ -84,15 +81,18 @@ def export_data_as_csv(n_clicks):
         return True
     return False
 
-# Callback to copy selected rows to clipboard
+# Callback to handle row selection
 @callback(
     Output("clipboard", "content"),
-    Input("clipboard", "n_clicks"),
-    State("ag-grid", "selectedRows"),
+    Input("table", "selected_rows"),
+    State("table", "data")
 )
-def selected(n, selected):
-    if selected is None:
+def copy_selected_rows(selected_rows, data):
+    if not selected_rows:
         return "No selections"
-    df = fetch_data()
-    df = df[["Station", "Address", "Latitude", "Longitude", "Municipality", "Province", "Country", "Operator"]]
-    return df.to_string()
+    
+    # Get the selected rows from the data
+    selected_data = [data[i] for i in selected_rows]
+    df_selected = pd.DataFrame(selected_data)
+    return df_selected.to_string()
+

@@ -1,0 +1,722 @@
+[
+    {
+        "name": "Panguila",
+        "address": "Província de Luanda, Município de Cacuaco, Bairro Panguila (Projecto Vila Acadêmica), Rua Estrada Nacional nº100 Comuna Sede",
+        "city": "Panguila - Cacuao",
+        "state": "Bengo",
+        "country": "Angola",
+        "latitude": -8.681717,
+        "longitude": 13.469734
+    },
+    {
+        "name": "Caxito",
+        "address": "Bairro do Kixiquela - Caxito, Municipio de Dande",
+        "city": "Caxito - Dande",
+        "state": "Bengo",
+        "country": "Angola",
+        "latitude": 0,
+        "longitude": 0
+    },
+    {
+        "name": "Catumbela",
+        "address": "Província de Benguela, Município do Lobito, Comuna de Catumbela",
+        "city": "Catumbela - Lobito",
+        "state": "Benguela",
+        "country": "Angola",
+        "latitude": -12.425122,
+        "longitude": 13.540386
+    },
+    {
+        "name": "Lobito 28",
+        "address": "Província de Benguela, Município do Lobito,  Rua 15 de Agosto",
+        "city": "Lobito - Lobito",
+        "state": "Benguela",
+        "country": "Angola",
+        "latitude": -12.353514,
+        "longitude": 13.547797
+    },
+    {
+        "name": "Culango",
+        "address": "Província de Benguela, Município do Lobito, Zona do Desvio do Culango",
+        "city": "Lobito - Lobito",
+        "state": "Benguela",
+        "country": "Angola",
+        "latitude": -12.351183,
+        "longitude": 13.818117
+    },
+    {
+        "name": "Acacias Rubras",
+        "address": "Província de Benguela, Zona do Calohombo Casseque,  Município de Benguela. Saida Benguela hacia Baia Farta",
+        "city": "Benguela - Benguela",
+        "state": "Benguela",
+        "country": "Angola",
+        "latitude": -12.593142,
+        "longitude": 13.387672
+    },
+    {
+        "name": "Negrao",
+        "address": "Província de Benguela, Município da Catumbela, Bairro do Luongo Catumbela, Zona do Negrão. Entre Lobito e Benguela",
+        "city": "Lobito - Catumbela",
+        "state": "Benguela",
+        "country": "Angola",
+        "latitude": -12.461883,
+        "longitude": 13.518017
+    },
+    {
+        "name": "Ombaka",
+        "address": "Provincia de Benguela, Municipio de Benguela, EN105, Zona Industrial II-A",
+        "city": "Benguela - Benguela",
+        "state": "Benguela",
+        "country": "Angola",
+        "latitude": -12.628833,
+        "longitude": 13.35775
+    },
+    {
+        "name": "Ganda",
+        "address": "Estrada Nacional 260, no sentido Ganda - Cubal , Zona do Lueca,Municipio de Ganda, Benguela",
+        "city": "Benguela - Ganda",
+        "state": "Benguela",
+        "country": "Angola",
+        "latitude": -13.027028,
+        "longitude": 14.613528
+    },
+    {
+        "name": "Kuito",
+        "address": "Província de Bié, Município do Kuito, Bairro Militar  Chissindo. Perto do aeroporto",
+        "city": "Kuito - Kuito",
+        "state": "Bie",
+        "country": "Angola",
+        "latitude": -12.413667,
+        "longitude": 16.933861
+    },
+    {
+        "name": "Andulo",
+        "address": "Provincia Bie, Estrada Nacional  140 (Andulo), no sentido Andulo - Kuito",
+        "city": "Andulo - Kuito",
+        "state": "Bie",
+        "country": "Angola",
+        "latitude": -11.507572,
+        "longitude": 16.685247
+    },
+    {
+        "name": "Maiombe",
+        "address": "Província de Cabinda,Município Sede, Bairro do Lucola, Rua do Comercio",
+        "city": "Cabinda - Sede",
+        "state": "Cabinda",
+        "country": "Angola",
+        "latitude": -5.560244,
+        "longitude": 12.2121
+    },
+    {
+        "name": "Aeroporto Cabinda",
+        "address": "Rua das Forcas Armadas, Cabinda",
+        "city": "Cabinda - Cabinda",
+        "state": "Cabinda",
+        "country": "Angola",
+        "latitude": -5.586242,
+        "longitude": 12.192211
+    },
+    {
+        "name": "Xangongo",
+        "address": "Província do Cunene, Município de Ombadja, Comuna do Xangongo, Bairro Rei Mandume",
+        "city": "Xangongo - Ombadja",
+        "state": "Cunene",
+        "country": "Angola",
+        "latitude": -16.746469,
+        "longitude": 14.98982
+    },
+    {
+        "name": "Santa Clara",
+        "address": "Província do Cunene, Município do Namacunde/Santa Clara",
+        "city": "Santa Clara - Namacunde / Santa Clara",
+        "state": "Cunene",
+        "country": "Angola",
+        "latitude": -17.378784,
+        "longitude": 15.885933
+    },
+    {
+        "name": "Ondjiva Aeroporto",
+        "address": "Província do Cunene, Município de Cuanhama, Bairro Okapale. Estrada do aeroporto à cidade",
+        "city": "Ondjiva - Cuanhama",
+        "state": "Cunene",
+        "country": "Angola",
+        "latitude": -17.054956,
+        "longitude": 15.695464
+    },
+    {
+        "name": "Huambo",
+        "address": "Província do Huambo , Município do Huambo,  Bairro Ndango",
+        "city": "Huambo - Huambo",
+        "state": "Huambo",
+        "country": "Angola",
+        "latitude": -12.8051,
+        "longitude": 15.64327
+    },
+    {
+        "name": "Ekuikui Iv",
+        "address": "Província do Huambo , Município do Huambo,  Bairro Benfica, Rua Paulo Dias de Novais .",
+        "city": "Huambo - Huambo",
+        "state": "Huambo",
+        "country": "Angola",
+        "latitude": -12.735483,
+        "longitude": 15.747503
+    },
+    {
+        "name": "Palanca Heve",
+        "address": "Província da Huíla, Município de Humpata, Comuna de Palanca, Zona do Tchitoco",
+        "city": "Lubango - Humpata",
+        "state": "Huila",
+        "country": "Angola",
+        "latitude": -14.970606,
+        "longitude": 13.456432
+    },
+    {
+        "name": "Cristo Rei",
+        "address": "Província da Huíla, Bairro do Tchioco- Lubango. Estrada do aeroporto",
+        "city": "Lubango - Lubango",
+        "state": "Huila",
+        "country": "Angola",
+        "latitude": -14.92445,
+        "longitude": 13.538386
+    },
+    {
+        "name": "Lubango Km14",
+        "address": "Provincia da Huila, Municipio do Lubango Zona do Km14",
+        "city": "Lubango - Lubango",
+        "state": "Huila",
+        "country": "Angola",
+        "latitude": -15.001667,
+        "longitude": 13.585
+    },
+    {
+        "name": "Menongue",
+        "address": "Estrada do Kuito Kuanavale - Provincia Kwando Kubango",
+        "city": "Menongue - Menongue",
+        "state": "Kuando Kubango",
+        "country": "Angola",
+        "latitude": -14.665917,
+        "longitude": 17.718328
+    },
+    {
+        "name": "Ndalatando",
+        "address": "Bairro Camunday, municipio do cazengo, provincia do kwanza norte",
+        "city": "Ndalatando - Cazengo",
+        "state": "Kwanza Norte",
+        "country": "Angola",
+        "latitude": -9.30915,
+        "longitude": 14.87935
+    },
+    {
+        "name": "Porto Amboim",
+        "address": "Província do Kwanza Sul, Município do Porto Amboim, Zona Norte Bairro Tango",
+        "city": "Porto Amboim - Porto Amboim",
+        "state": "Kwanza Sul",
+        "country": "Angola",
+        "latitude": -10.702203,
+        "longitude": 13.782611
+    },
+    {
+        "name": "Sumbe",
+        "address": "Província do Kuanza-Sul, Município do Sumbe",
+        "city": "Sumbe - Sumbe",
+        "state": "Kwanza Sul",
+        "country": "Angola",
+        "latitude": -11.186033,
+        "longitude": 13.859533
+    },
+    {
+        "name": "Waku Kungo",
+        "address": "Província do Kuanza-Sul, Município do Cela, Cidade do Wako Kungo, Estrada Nacional 240",
+        "city": "Waku Kungo - Cela",
+        "state": "Kwanza Sul",
+        "country": "Angola",
+        "latitude": -11.359928,
+        "longitude": 15.124478
+    },
+    {
+        "name": "Quibala",
+        "address": "Província do Kuanza-Sul, Município da Quibala, Cidade de Quibala, Estrada Nacional 120, no sentido Wako Kungo - Quibala",
+        "city": "Kuibala - Quibala",
+        "state": "Kwanza Sul",
+        "country": "Angola",
+        "latitude": -10.75242,
+        "longitude": 14.992259
+    },
+    {
+        "name": "Gabela",
+        "address": "Província do Kuanza-Sul, Município do Gabela, Cidade do Gabela, Estrada Nacional 221, sentido Quibala - Gabela",
+        "city": "Gabela - Gabela",
+        "state": "Kwanza Sul",
+        "country": "Angola",
+        "latitude": -10.848015,
+        "longitude": 14.397333
+    },
+    {
+        "name": "Mussende",
+        "address": "Provincia do Kuanza Sul, Municipio de Mussende, Estrada Nacional 140 (Andulo), no sentido Andulo - Kuito",
+        "city": "Mussende - Mussende",
+        "state": "Kwanza Sul",
+        "country": "Angola",
+        "latitude": -10.5112,
+        "longitude": 16.020281
+    },
+    {
+        "name": "Cassongue",
+        "address": "vila do Cassongue, Provincia do Kwanza sul.",
+        "city": "Cassongue - Cassongue",
+        "state": "Kwanza Sul",
+        "country": "Angola",
+        "latitude": -11.851933,
+        "longitude": 15.059156
+    },
+    {
+        "name": "Viana Km30",
+        "address": "Província de Luanda, Município de Viana-Sede km30",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.964739,
+        "longitude": 13.470033
+    },
+    {
+        "name": "Kilamba Kiaxi",
+        "address": "Província de Luanda, Município do Kilamba Kiaxi, Bairro Camama II, junto a nova Cidade do Kilamba Kiaxi - Bita Tanque",
+        "city": "Luanda - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.996569,
+        "longitude": 13.289389
+    },
+    {
+        "name": "Nova Vida",
+        "address": "Província de Luanda, Município de Kilamba Kiaxi, Bairro Gamek, Lote nº 1992 A",
+        "city": "Luanda - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.896314,
+        "longitude": 13.227678
+    },
+    {
+        "name": "Imbondeiro",
+        "address": "Província de Luanda, Município de Viana-Sede km 14",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.904005,
+        "longitude": 13.344561
+    },
+    {
+        "name": "Autoestrada Km27",
+        "address": "Província de Luanda, Estrada Via Expresso, Município de Viana",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.92455,
+        "longitude": 13.434211
+    },
+    {
+        "name": "Talatona",
+        "address": "Província de Luanda, Município da Samba, Bairro Morro Bento, Estrada Avenida Pedro de Castro Vanduném Loy, Comuna Lunda Sul",
+        "city": "Luanda - Talatona",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.901839,
+        "longitude": 13.202958
+    },
+    {
+        "name": "Cacuaco",
+        "address": "Província de Luanda , Município de Cacuaco, Bairro Sequele, Zona Indústrial do Sequele, Comuna de Cacuaco,",
+        "city": "Luanda - Cacuaco",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.845806,
+        "longitude": 13.427528
+    },
+    {
+        "name": "Estadio 11 De Novembro",
+        "address": "Província de Luanda, Município de Viana, Bairro da Sapú - Bita Sapu",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.951608,
+        "longitude": 13.288336
+    },
+    {
+        "name": "Zee",
+        "address": "Provincía de Luanda,Município de Viana km 18",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.951608,
+        "longitude": 13.288336
+    },
+    {
+        "name": "Patriota",
+        "address": "Província de Luanda, Município do Belas, Bairro do Cabolombo, Rua Lar Patriota Zona 3, Comuna do Benfica",
+        "city": "Luanda - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.933778,
+        "longitude": 13.171111
+    },
+    {
+        "name": "Hospital Geral",
+        "address": "Província de Luanda, Município Kilamba Kiaxi, Bairro Alegre, Comuna do Camama",
+        "city": "Luanda - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.899978,
+        "longitude": 13.261214
+    },
+    {
+        "name": "Zanca",
+        "address": "Província de Luanda, Município de Viana, Bairro da Regedoria, Rua Viana-Zango",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.952114,
+        "longitude": 13.386203
+    },
+    {
+        "name": "Enditrade",
+        "address": "Província de Luanda, Município de Viana Km 9A",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.8665778,
+        "longitude": 13.31235
+    },
+    {
+        "name": "Salinas",
+        "address": "Província de Luanda, Município do Cacuaco, Bairro Boa Esperança III (Kicolo)",
+        "city": "Luanda - Cacuaco",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.7780333,
+        "longitude": 13.3539861
+    },
+    {
+        "name": "5aavenida",
+        "address": "Província de Luanda, Município do Cazenga , 5º Avenida Zona Industrial",
+        "city": "Luanda - Cazenga",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.7780333,
+        "longitude": 13.3539861
+    },
+    {
+        "name": "Benfica Autoestrada",
+        "address": "Província de Luanda, Município da Samba, Bairro do Tchinguali, Comuna do Benfica",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.980425,
+        "longitude": 13.1847694
+    },
+    {
+        "name": "Eucalyptus",
+        "address": "Província de Luanda, Município do Cacuaco, Bairro dos Pescadores",
+        "city": "Luanda - Cacuaco",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.7705694,
+        "longitude": 13.3815667
+    },
+    {
+        "name": "Artesanato",
+        "address": "airro Benfica1, Município da Samba (Estrada Nacional Luanda/Sumbe), Provincia de Luanda",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.951925,
+        "longitude": 13.1530361
+    },
+    {
+        "name": "Zango",
+        "address": "Bairro Zango, Município de Viana , Rua Direita do Calumbo, Provincia de Luanda",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -9.0065861,
+        "longitude": 13.4001694
+    },
+    {
+        "name": "Bananeira",
+        "address": "Bairro Km 9-B, Município de Viana, Comuna da Estalagem,Província de Luanda",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.8609222,
+        "longitude": 13.3192
+    },
+    {
+        "name": "Baia De Luanda",
+        "address": "Província de Luanda, Avenida Murtala Mohamed, Ilha do Cabo",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.8584306,
+        "longitude": 13.2597972
+    },
+    {
+        "name": "Golf",
+        "address": "Bairro Havemos de Voltar, Municipio de Kilamba Kiaxi,",
+        "city": "Luanda - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.9804806,
+        "longitude": 13.1902583
+    },
+    {
+        "name": "Zona Verde",
+        "address": "Bairro Benfica, Comuna do Benfica, Municipio de Belas - Provincia de Luanda",
+        "city": "Luanda - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.7989139,
+        "longitude": 13.3158944
+    },
+    {
+        "name": "Mabor 14",
+        "address": "Estrada Ngola Kiluanje, Bairro do Kikolo (defronte o cemitério da Mulemba)",
+        "city": "Luanda - Cacuaco",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -9.0085306,
+        "longitude": 13.0834917
+    },
+    {
+        "name": "Ramiros",
+        "address": "Bairro dos Ramiros, Km 30, Município de Belas",
+        "city": "Ramiros - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.9188389,
+        "longitude": 13.2241056
+    },
+    {
+        "name": "Cambamba",
+        "address": "Comuna do Cambamba, Distrito do Kilamba Kiaxi (Bairro Nova Vida)",
+        "city": "Luanda - Belas",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.7879583,
+        "longitude": 13.2867583
+    },
+    {
+        "name": "Porto Pesqueiro",
+        "address": "Bairro Val Saroca, comuna do ngola kiluanje,defronte estrada nacional, 100 - Distrito sambizanga",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.8808556,
+        "longitude": 13.2089611
+    },
+    {
+        "name": "Rocha Pinto",
+        "address": "Rua 21 de Janeiro, Bairro Rocha Pinto",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.7678944,
+        "longitude": 13.3907889
+    },
+    {
+        "name": "Kifangondo",
+        "address": "Via expressa Luanda-Kifangondo, Bairro Nova Urbanização de Cacuaco",
+        "city": "Luanda - Cacuaco",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.9076194,
+        "longitude": 13.3172917
+    },
+    {
+        "name": "Praça Madeira",
+        "address": "Estrada da Calemba 2, Bairro da Sapú, Município de Viana",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.8665139,
+        "longitude": 13.32925
+    },
+    {
+        "name": "Estalagem",
+        "address": "Estrada de Catete Bairro Km 12-B, Estalagem (Travessa da  moagem)",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.8162222,
+        "longitude": 13.2661944
+    },
+    {
+        "name": "São Paulo",
+        "address": "Rua Ngola Kiluanje, Bairro São Paulo, Distrito Urbano do Sambizanga",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.9548944,
+        "longitude": 13.1499472
+    },
+    {
+        "name": "Por Do Sol",
+        "address": "Bairro Benfica, Distrito Urbano da Samba, Municipio de Luanda",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.9805556,
+        "longitude": 13.4882778
+    },
+    {
+        "name": "Novo Aeroporto",
+        "address": "Estrda de Catete, Mucede Baia , Zona do Km32, municipio de Viana",
+        "city": "Luanda - Viana",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -7.4173611,
+        "longitude": 20.8070556
+    },
+    {
+        "name": "Dundo",
+        "address": "Província da Lunda Norte, Cidade do Dundo, Bairro Samacaca, Estrada Nacional 180",
+        "city": "Dundo - Chitato",
+        "state": "Lunda Norte",
+        "country": "Angola",
+        "latitude": -9.6517139,
+        "longitude": 20.3938167
+    },
+    {
+        "name": "Xamuteba",
+        "address": "Bairro Cumbulo, municipio de Xá-Muteba",
+        "city": "Xa-muteba - Xa Muteba",
+        "state": "Lunda Norte",
+        "country": "Angola",
+        "latitude": -9.6662889,
+        "longitude": 20.3613861
+    },
+    {
+        "name": "Saurimo Centro",
+        "address": "Província da Lunda Sul, Bairro Txicumina, Rua da Liberdade Municipio do Saurimo",
+        "city": "Saurimo - Saurimo",
+        "state": "Lunda Sul",
+        "country": "Angola",
+        "latitude": -9.5453972,
+        "longitude": 16.3616139
+    },
+    {
+        "name": "Diamante",
+        "address": "Provincia da Lunda Sul, Estrada Nacional 230, Municipio do Saurimo",
+        "city": "Saurimo - Saurimo",
+        "state": "Lunda Sul",
+        "country": "Angola",
+        "latitude": -11.7839917,
+        "longitude": 19.8855083
+    },
+    {
+        "name": "Malange",
+        "address": "Província de Malanje, Município de Malanje, Rua Avenida Comandante Dangereux",
+        "city": "Malange - Malanje",
+        "state": "Malange",
+        "country": "Angola",
+        "latitude": -15.2105,
+        "longitude": 12.1451861
+    },
+    {
+        "name": "Luena",
+        "address": "Estrada Nacional 250, Municipio de Luena,Provincia do Moxico.",
+        "city": "Luena - Luena",
+        "state": "Moxico",
+        "country": "Angola",
+        "latitude": -13.91305,
+        "longitude": 12.5276
+    },
+    {
+        "name": "Welwitschia",
+        "address": "Província de Namibe, Município do Namibe, Estrada nr.11, Junto Hospital Infantil",
+        "city": "Namibe - Namibe",
+        "state": "Namibe",
+        "country": "Angola",
+        "latitude": -7.6288722,
+        "longitude": 15.0581194
+    },
+    {
+        "name": "Lucira",
+        "address": "Comuna do Lucira, Provincia do Namibe",
+        "city": "Lucira - Lucira",
+        "state": "Namibe",
+        "country": "Angola",
+        "latitude": -7.59975,
+        "longitude": 15.04875
+    },
+    {
+        "name": "Kilala",
+        "address": "Aldeia Kilala, Município do Uíge, (Estrada Nacional Uíge/Luanda), Provincia do Uíge",
+        "city": "Uige - Uige",
+        "state": "Uige",
+        "country": "Angola",
+        "latitude": -7.7414056,
+        "longitude": 15.2576167
+    },
+    {
+        "name": "Uige Centro",
+        "address": "Provincia do Uíge, Bairro Papelao, Rua do Café - Municipio do Uige",
+        "city": "Uige - Uige",
+        "state": "Uige",
+        "country": "Angola",
+        "latitude": -7.3233111,
+        "longitude": 15.9914444
+    },
+    {
+        "name": "Calunga",
+        "address": "Província de Uige, Município de Negage , Bairro Caua, Estrada Nacional 220, no sentido Uige – Negage",
+        "city": "Negage - Negage",
+        "state": "Uige",
+        "country": "Angola",
+        "latitude": -6.1583111,
+        "longitude": 12.3736639
+    },
+    {
+        "name": "Sanza Pombo",
+        "address": "Providencia Uige, Municipio  Sanza Pombo, Estrada Nacional 220, no sentido Negage – Sanza Pombo",
+        "city": "Sanza Pombo - Sanza Pombo",
+        "state": "Uige",
+        "country": "Angola",
+        "latitude": -6.2396111,
+        "longitude": 14.2269167
+    },
+    {
+        "name": "Soyo",
+        "address": "Rua Principal do Soyo, Bairro Kami , Província do Zaire",
+        "city": "Soyo - Soyo",
+        "state": "Zaire",
+        "country": "Angola",
+        "latitude": -7.2530278,
+        "longitude": 12.8777778
+    },
+    {
+        "name": "Mbanza Congo",
+        "address": "Província do Zaire, Município de M&#039;banza Congo, Zona da Bela Vista. A três km da cidade direcção Luvo - Bairro 11 de Novembro",
+        "city": "Mbanza Congo - M&#039;banza Congo",
+        "state": "Zaire",
+        "country": "Angola",
+        "latitude": -8.9015778,
+        "longitude": 13.20215
+    },
+    {
+        "name": "Nzeto",
+        "address": "Provincia do Zaire, Municipio do Nzeto, Bairro Mambo Mampa.",
+        "city": "Nzeto - Nzeto",
+        "state": "Zaire",
+        "country": "Angola",
+        "latitude": -7.25414,
+        "longitude": 12.87778
+    },
+    {
+        "name": "Elavoko",
+        "address": "Zona CS3, Gleba GU03A, Avenida Pedro de Castro Van-Dumen Loy, Comuna do Morro Bento, Municipio de Belas, Provincia de Luanda",
+        "city": "Luanda - Luanda",
+        "state": "Luanda",
+        "country": "Angola",
+        "latitude": -8.90158,
+        "longitude": 13.20215
+    }
+]
