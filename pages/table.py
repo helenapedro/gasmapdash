@@ -1,6 +1,5 @@
 import dash
-from dash import html, dcc, callback, State, Output, Input
-import dash_table
+from dash import html, dcc, dash_table, callback, State, Output, Input
 import pandas as pd
 import requests
 
