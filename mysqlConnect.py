@@ -1,5 +1,10 @@
 import mysql.connector
 import json
+import dotenv
+import os
+
+# Load environment variables from a .env file
+dotenv.load_dotenv()
 
 # Read the scraped data from the JSON file
 file_path = './gas_stations.json'
@@ -8,10 +13,10 @@ with open(file_path, 'r', encoding='utf-8') as file:
 
 # Setup your database connection
 db_connection = mysql.connector.connect(
-    host="srv1146.hstgr.io",
-    user="u894841105_mapeamento0317",
-    password="Mapeamento03176",
-    database="u894841105_mapeamento"
+    host=os.getenv('DB_HOST'),
+    user=os.getenv('DB_USER'),
+    password=os.getenv('DB_PASSWORD'),
+    database=os.getenv('DB_NAME')
 )
 cursor = db_connection.cursor()
 
