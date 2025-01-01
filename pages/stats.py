@@ -10,7 +10,6 @@ dash.register_page(__name__,
                    title='Stats'
 )
 
-# Function to fetch data from the API with error handling
 def fetch_data():
     try:
         url = "https://gaspump-18b4eae89030.herokuapp.com/api/stations"
