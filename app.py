@@ -8,7 +8,7 @@ server = app.server
 
 navbar = dbc.Navbar(
     dbc.Container([
-        dbc.NavbarBrand("GasPump Dashboard", href="/"),
+        dbc.NavbarBrand("GasPump", href="/"),
         dbc.Nav(
             [
                 dbc.NavLink("Map", href="/", active="exact"),
